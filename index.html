@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Calculator</title>
     <style>
       /* Define the styles for the calculator */
@@ -51,7 +51,7 @@
   <body>
     <div class="calculator">
       <h1>Calculator</h1>
-      <input class="output" type="text" readonly>
+      <input class="output" type="text" readonly />
       <button onclick="clearOutput()">C</button>
       <button onclick="appendOutput('7')">7</button>
       <button onclick="appendOutput('8')">8</button>
@@ -88,11 +88,6 @@
           output.value = 'Error';
         }
       }
-
-      // Add key input for calculator values
-      document.addEventListener('keydown', function(event) {
-        if (event.key >= '0' && event.key <= '9') {
-          appendOutput(event.key);
-        } else if (event.key === '.') {
-          appendOutput('.');
-        } else if (event.key === '/' || event.key === '*' || event.key === '-' ||
+    </script>
+  </body>
+</html>
